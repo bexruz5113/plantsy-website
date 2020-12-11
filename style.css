@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.next1{
+    width: 100%;
+    object-fit: cover;
+    background-image: url(image/Landing-page-222.jpg);  
+}
+.next2{
+    width: 100%;
+    background-image: url(image/IMG_9228-CC.jpg);
+}
+.next3{
+    width: 100%;
+    background-size: cover;
+    background-image: url(image/iklannn.png);  
+}
+.next4{
+    background-color: #275F5E;
+    border-radius: 10px;
+}.text{
+    color:#275F5E;
+}
+.text1{
+    font-size: 60px;
+    text-align: start;
+    color:#275F5E;
+}
+.text2{
+    font-size: 40px;
+    text-align: start;
+    color:#275F5E;
+}
+.bottom2{
+    display: block;
+    width: 5px;
+    height: 30px;
+    background-color:#275F5E;
+}
+.bottom1{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: 5px;
+    background-color:#275F5E;
+}
+.click{
+
+    background-color: #275F5E;
+    transition: all 1s ease;
+    color: floralwhite;
+}
+.click:hover{
+    transform: translateY(15px);
+    /* transform:translateY(10px); */
+}
+/* .img1{
+    padding-bottom:100px;
+    z-index: 3;
+} */
+.win1{
+    width: 260px;
+    padding: 10px;
+    background-color: rgba(224, 220, 220, 0.918);
+    box-shadow: 5px 5px 5px 5px #888888;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+}
+.win1:hover{
+    color: white;
+    background-color:#389694;
+}
+.win2{
+    width: 260px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    transition: all 0.5s ease;
+    
+}
+.win2:hover{
+    color: white;
+    background-color: lightgray;
+
+}
+.win3{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(114, 113, 113);
+    transition: all 0.5s ease;
+    display: flex; 
+    justify-content:center;
+     align-items:center;
+     color: white;
+}
+.win3:hover{
+    background-color: #275F5E;
+}
+.link1{
+    transition: all 0.8s ease;
+    font-size: 20px;
+    color: teal;
+}
+.link1:hover{
+    border-bottom: 3px solid #275F5E;
+    color: teal;
+
+}
+.win4{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(image/entrada.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    object-fit: cover;
+}
+.win5{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: grey;
+    transition: all 0.8s ease;
+}
+.win5:hover{
+    background-color: #275F5E;
+    color:white;
+}

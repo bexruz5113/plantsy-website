@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Plantsy</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid bg-white">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-lg-4 py-2 col-8 d-flex justify-content-lg-start justify-content-center">
+                    <a href="#"><img class="img-fluid" src="image/PLANTSY.png" alt="logotip"></a>
+                </div>
+                <div class="col-4 p-2 justify-content-center align-items-center d-flex d-lg-none">
+                    <a class="btn btn-white" data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa fa-bars fa-2x text-secondary"></i>
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="col-12 d-block ">
+                            <ul class="nav d-flex justify-content-lg-around align-items-lg-center">
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link active text-secondary" href="#"><small
+                                            class="font-weight-bold">Home</small></a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      About
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Link 1</a>
+                                      <a class="dropdown-item" href="#">Link 2</a>
+                                      <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                  </li>
+
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Services
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Link 1</a>
+                                      <a class="dropdown-item" href="#">Link 2</a>
+                                      <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Product
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Link 1</a>
+                                      <a class="dropdown-item" href="#">Link 2</a>
+                                      <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-secondary" href="#"><small
+                                            class="font-weight-bold">Blog</small></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                      Pages
+                                    </a>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Link 1</a>
+                                      <a class="dropdown-item" href="#">Link 2</a>
+                                      <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-secondary" href="#"><small
+                                            class="font-weight-bold">Contact</small></a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-lg-flex  d-none">
+                    <ul class="nav d-flex justify-content-lg-around align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active text-secondary font-weight-bold" href="#"><small
+                                    class="font-weight-bold">Home</small></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                              About
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                              Services
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                              Product
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary font-weight-bold" href="#"><small class="font-weight-bold">Blog</small></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                              Pages
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Link 1</a>
+                              <a class="dropdown-item" href="#">Link 2</a>
+                              <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary font-weight-bold" href="#"><small
+                                    class="font-weight-bold">Contact</small></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid next1">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-12 py-5">
+                    <p class="font-weight-bold text1 py-4 w-75">Magic plants,
+                        From Around The World.</p>
+                    <p class="text-secondary w-75 text-justify">Lorem ipsum dolor sit, Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Ipsum facilis dolore laboriosam ex adipisci placeat dolorem sed
+                        ratione voluptatum ad. amet conse.</p>
+                </div>
+                <div class="col-lg-3 col-6"><button
+                        class="click first p-2 d-flex justify-content-center align-items-center rounded"
+                        type="button"><i class="fa fa-pagelines fa-fw mr-1"></i>
+                        <p class="mb-0">Plant Collection</p>
+                    </button></div>
+                <div class="col-lg-3 col-6"><button
+                        class="click last p-2 d-flex justify-content-center align-items-center rounded" type="button"><i
+                            class="fa fa-play-circle-o mr-1" aria-hidden="true"></i>
+                        <p class="mb-0">Watch Video</p>
+                    </button></div>
+            </div>
+        </div>
+    </div>
+    <!-- kdjbaskdjcbksdjcbkdjsbckjdsbckdjscbkjsbckjsdbckjbsdckjdsbckjsdbck -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-12 pt-5">
+                <h5 class="text-secondary text-center">Welcome to Plants</h5>
+                <p class="text2 text-center font-weight-bold">Shop By Category</p>
+                <span class="bottom1"></span>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center my-3">
+                <div class="win1">
+                    <div class="row d-block">
+                        <div class="col-12 img1 d-flex justify-content-center">
+                            <img class="img-fluid w-75" src="image/Yuccaplant-6.png" alt="yukka">
+                        </div>
+                        <div class="col-12 p-3 ">
+                            <h3 class="text text-center font-weight-bold">Big Houseplants</h3>
+                            <p class=" py-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                                voluptate.</p>
+                            <div class="d-flex justify-content-center pb-4"> <button
+                                    class="click p-2 d-flex justify-content-center align-items-center rounded bg-secondary"
+                                    type="button">
+                                    <i class="fa fa-pagelines fa-fw mr-1"></i>
+                                    <p class="mb-0">Plant Collection</p>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex align-items-lg-center align-items-center justify-content-center col-md-6 my-3 col-12">
+                <div class="win2">
+                    <div class="row d-block">
+                        <div class="col-12 img1 d-flex justify-content-center">
+                            <img class="img-fluid w-75" src="image/Medium-e1603269436820.png" alt="yukka">
+                        </div>
+                        <div class="col-12 p-3 ">
+                            <h3 class="text text-center font-weight-bold">Big Houseplants</h3>
+                            <p class=" py-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                                voluptate.</p>
+                            <div class="d-flex justify-content-center pb-4"> <button
+                                    class="click p-2 d-flex justify-content-center align-items-center rounded"
+                                    type="button">
+                                    <i class="fa fa-pagelines fa-fw mr-1"></i>
+                                    <p class="mb-0">Plant Collection</p>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex align-items-lg-center justify-content-center col-md-6 my-3 col-12">
+                <div class="win2">
+                    <div class="row d-block">
+                        <div class="col-12 img1 d-flex justify-content-center">
+                            <img class="img-fluid w-75" src="image/desk.png" alt="yukka">
+                        </div>
+                        <div class="col-12 p-3 ">
+                            <h3 class="text text-center font-weight-bold">Big Houseplants</h3>
+                            <p class=" py-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                                voluptate.</p>
+                            <div class="d-flex justify-content-center pb-4"> <button
+                                    class="click p-2 d-flex justify-content-center align-items-center rounded"
+                                    type="button">
+                                    <i class="fa fa-pagelines fa-fw mr-1"></i>
+                                    <p class="mb-0">Plant Collection</p>
+                                </button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-lg-3 d-flex align-items-lg-center justify-content-center col-md-6 my-3 col-12">
+            <div class="win2">
+                <div class="row d-block">
+                    <div class="col-12 img1 d-flex justify-content-center">
+                        <img class="img-fluid w-75" src="image/PNG-4a.png" alt="yukka">
+                    </div>
+                    <div class="col-12 p-3 ">
+                        <h3 class="text text-center font-weight-bold">Big Houseplants</h3>
+                        <p class=" py-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                            voluptate.</p>
+                        <div class="d-flex justify-content-center pb-4"> <button
+                                class="click p-2 d-flex justify-content-center align-items-center rounded"
+                                type="button">
+                                <i class="fa fa-pagelines fa-fw mr-1"></i>
+                                <p class="mb-0">Plant Collection</p>
+                            </button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--xjbaskjcbkdjcbkdjbckjdbsckjdbkcjbdksjcbkdjbckjdsbckjdsbck  -->
+<div class="container">
+    <div class="row py-5">
+        <div class="col-md-5 col-12 pl-0 pr-5"> 
+            <img class="img-fluid" src="image/About-832x1024.png" alt="About">
+        </div>
+        <div class="col-md-7 col-12 py-5">
+            <h4 class="text-secondary">About Us</h4>
+            <p class="text2 font-weight-bold">Plantsy,Healty Business</p>
+            <span class="bottom1 m-1"></span>
+            <p class="text-secondary my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam nulla necessitatibus fugiat 
+                aliquid! Quos consequuntur corporis fuga aliquam cupiditate ad vel ab cum similique dolorem voluptatem 
+                totam saepe quia odit culpa commodi dignissimos beatae ipsam officia, voluptas, temporibus nobis esse
+                 doloremque? Nulla, saepe minima ex dignissimos quis iure fuga? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti atque sunt numquam ut ratione enim minima culpa et at temporibus.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi voluptatibus ut, incidunt hic error explicabo nihil harum 
+                itaque doloremque neque. Voluptatum debitis eos iusto. Blanditiis fugiat nobis architecto vel sed?</p>
+                  <button class="click my-3 px-3 rounded" type="button">Read More</button>
+        </div>
+        <div class="col-lg-4 d-lg-flex d-block justify-content-lg-center  col-md-6 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-12 d-lg-flex d-flex justify-content-lg-start justify-content-center mr-0">
+                    <div class="win3">
+                    <i class="fa fa-paper-plane-o fa-2x" aria-hidden="true"></i>
+                </div></div>
+                <div class="col-lg-8 col-12 pl-0  text-center">
+                    <h5 class="font-weight-bold text">Free Shipping Delivery</h5>
+                    <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 d-lg-flex d-block justify-content-lg-center  col-md-6 col-12">
+                <div class="row">
+                <div class="col-lg-4 col-12  d-lg-flex d-flex justify-content-lg-start justify-content-center mr-0">
+                    <div class="win3">
+                    <i class="fa fa-handshake-o fa-2x" aria-hidden="true"></i>                   
+                </div></div>
+                <div class="col-lg-8 col-12 pl-0 text-center">
+                    <h5 class="font-weight-bold text">Community & Forum</h5>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 d-lg-flex d-block justify-content-lg-center  col-md-6 col-12">
+            <div class="row">
+                <div class="col-lg-4 col-12  d-lg-flex d-flex justify-content-lg-start justify-content-center mr-0">
+                    <div class="win3">
+                    <i class="fa fa-headphones fa-2x" aria-hidden="true"></i>                   
+                </div></div>
+                <div class="col-lg-8 col-12 pl-0 text-center">
+                    <h5 class="font-weight-bold text">Stay Connected With</h5>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- kehejvkdfjvkjdkvjbfkjbfvkjbfkvjfbvkjfbvkfbvkjdfbvkjfdbvkjfbvkjfdbkj -->
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row">
+            <div class="col-12 pt-5">
+                <p class="text2 font-weight-bold text-center pt-5">Plants Collection</p>
+                <h5 class="text-secondary font-weight-bold text-center">Lorem ipsum dolor sit amet consectetur.</h5>
+                <span class="bottom1"></span>
+                <p class="text-center text-secondary font-weight-bold py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At beatae,
+                     corporis nostrum, maxime quibusdam architecto, soluta saepe est repellendus 
+                     obcaecati laboriosam animi fugiat eius. 
+                    Nostrum distinctio similique esse aliquid dolorem.</p>
+            </div>
+            <div class=" col-12">
+            <div class="row py-5">
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center"> 
+                <a class="link1 text-decoration-none " href="#">Houseplant Medium </a><span class="bottom2 ml-5 "></span></div>
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center"> 
+                <a class="link1 text-decoration-none " href="#">Houseplant Medium </a><span class="bottom2 ml-5"></span></div>
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center"> 
+                <a class="link1 text-decoration-none " href="#">Houseplant Medium </a><span class="bottom2 ml-5"></span></div>
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center"> 
+                <a class="link1 text-decoration-none " href="#">Houseplant Medium </a><span class="bottom2 ml-5"></span></div>
+        </div></div>
+        <div class="col-12 py-5 ">               
+            <div class="row d-flex ">
+                <div class="carousel owl-carousel">
+
+                        <div class="col-12 p-2">
+                            <div class="col-12">
+                                <img class="img-fluid" src="image/Slide-produk-bg-1.png" alt="">
+                            </div>
+                            <div class="col-12 rounded bg-white pt-2">
+                                <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                                <p class="text-center">Variegata Monstera</p>     
+                        
+                                <span class="bottom1 w-75 "></span> 
+                                <h3 class="text-secondary text-center py-2">$127</h3>
+                                <div class="d-flex justify-content-center pb-3">
+                                <i class="fa fa-facebook px-2"></i>
+                                <i class="fa fa-instagram px-2"></i>
+                                <i class="fa fa-phone px-2"></i> </div>                          
+                            </div>
+                        </div>  
+                   
+                
+                        <div class="col-12 p-2">
+                            <div class="col-12">
+                                <img class="img-fluid" src="image/Slide-produk-bg-2.png" alt="">
+                            </div>
+                            <div class="col-12 rounded bg-white pt-2">
+                                <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                                <p class="text-center">Variegata Monstera</p>     
+                                <span class="bottom1 "></span> 
+                                <h3 class="text-secondary text-center py-2">$127</h3>
+                                <div class="d-flex justify-content-center pb-3">
+                                <i class="px-2 fa fa-facebook"></i>
+                                <i class="px-2 fa fa-instagram"></i>
+                                <i class="px-2 fa fa-phone"></i> </div>   
+                            </div>
+                        </div>
+                    
+                  
+                        <div class="col-12 p-2">
+                            <div class="col-12">
+                                <img class="img-fluid" src="image/Slide-produk-bg-3.png" alt="">
+                            </div>
+                            <div class="col-12 rounded bg-white pt-2">
+                                <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                                <p class="text-center">Variegata Monstera</p>     
+                                <span class="bottom1 "></span> 
+                                <h3 class="text-secondary text-center py-2">$127</h3>
+                                <div class="d-flex justify-content-center pb-3">
+                                <i class="px-2 fa fa-facebook"></i>
+                                <i class="px-2 fa fa-instagram"></i>
+                                <i class="px-2 fa fa-phone"></i> </div>   
+                            </div>
+                        </div>
+                   
+                    <div class="col-12 p-2"> 
+                    <div class="col-12">
+                        <img class="img-fluid" src="image/Slide-produk-bg-5.png" alt="">
+                    </div>
+                    <div class="col-12 rounded bg-white pt-2">
+                        <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                        <p class="text-center">Variegata Monstera</p>     
+                        <span class="bottom1 "></span> 
+                        <h3 class="text-secondary text-center py-2">$127</h3>
+                        <div class="d-flex justify-content-center pb-3">
+                        <i class="px-2 fa fa-facebook"></i>
+                        <i class="px-2 fa fa-instagram"></i>
+                        <i class="px-2 fa fa-phone"></i> </div>   
+                             </div>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="d-flex justify-content-center py-5">
+                          <button class="click px-3 rounded">Check Other's</button>
+                        </div>
+                        </div>
+                       
+            </div>      
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row pt-5">
+        <div class="col-12">
+            <p class="text2 font-weight-bold text-center">Satisfied Customer</p>
+            <h5 class="text-center text-secondary">A Few Word From Our customers</h5>
+            <span class="bottom1 my-3"></span>
+            <p class="text-center text-secondary mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum omnis quasi
+                 reprehenderit ex nam atque ipsum id sapiente
+                 facilis architecto laborum assumenda, dolorem exercitationem, eum nemo dignissimos,
+                  temporibus dolore reiciendis.</p>
+        </div>
+        <div class="container shadow-lg next2 p-3 mb-5" >
+            <div class="row d-lg-flex d-block">
+                <div class="col-lg-3 d-lg-flex justify-content-lg-start p-5">
+                    <div class="win4"></div>                    
+                </div>
+                <div class="col-lg-9 col-12 text-center">
+                        <p class="text2 pt-4 text-center">Alexandia Yaa</p>
+                        <h5 class="text-warning">Interior Designer</h5>
+                        <span class="bottom1"></span>
+                        <p class="w-75 m-auto"><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Alias illum voluptas aspernatur! Doloremque non nulla quidem 
+                            repudiandae, itaque maxime molestias.</i></p>
+                            <i class="elementor-star-full"></i>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid next3">
+        <div class="container p-5">
+            <div class="row p-5">
+                <div class="col-12">
+                    <p class="text1 text-center font-weight-bold">New Arrival</p>
+                    <h5 class="text-center">Lorem ipsum dolor sit amet.</h5>
+                    <span class="bottom1"></span>
+                    <p class="text2 font-weight-bold text-center">From 20$ & 40% Off</p>
+                </div>
+            <div class="col-12 d-flex justify-content-center">
+                <button class="click text-center px-2 rounded mr-3">Check Collection</button>
+                <button class="click rounded px-2">View Blogs</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  bg-light">
+        <div class="container">
+        <div class="row">
+            <div class="col-12 py-5">
+                <p class="text2 text-center font-weight-bold">Vase & Others</p>
+                <h5 class="text-center font-weight-bold text-secondary">From Borneo Presenting to Your House</h5>
+                <span class="bottom1 my-3"></span>
+                <p class="text-center font-weight-bold w-75 m-auto text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Obcaecati dolorum animi ex facere, unde atque placeat
+                  praesentium sint cupiditate corporis.</p>
+            </div>
+        
+            <div class="col-lg-6 col-12 bg-white"> 
+                <div class="row ">
+                    <div class="carousel-slide owl-carousel">
+                    <div class="col-12 p-2">
+                            <div class="col-12">
+                                <img class="img-fluid" src="image/Others-Product-slide-1.png" alt="">
+                            </div>
+                            <div class="col-12 rounded bg-light pt-2">
+                                <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                                <p class="text-center">Variegata Monstera</p>     
+
+                                <h3 class="text-secondary text-center py-2">$127</h3>
+                                <div class="d-flex justify-content-center">
+                                <a href="#"><i class="fa fa-facebook px-2"></i></a>
+                                <a href="#"><i class="fa fa-instagram px-2"></i></a>
+                                <a href="#"><i class="fa fa-phone px-2"></i></a> </div>                          
+                            </div>
+                    </div>
+                         
+                   
+<!--2222 -->
+                        <div class="col-12 p-2">
+                            <div class="col-12">
+                                <img class="img-fluid" src="image/Others-Product-slide-5.png" alt="">
+                            </div>
+                            <div class="col-12 rounded bg-light pt-2">
+                                <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                                <p class="text-center">Variegata Monstera</p>     
+                                <h3 class="text-secondary text-center py-2">$127</h3>
+                                <div class="d-flex justify-content-center">
+                                <a href="#"><i class="px-2 fa fa-facebook"></i></a>
+                                <a href="#"><i class="px-2 fa fa-instagram"></i></a>
+                                <a href="#"><i class="px-2 fa fa-phone"></i></a> </div>   
+                            </div>
+                        </div>
+<!-- 33333 -->
+                        <div class="col-12 p-2">
+                            <div class="col-12">
+                                <img class="img-fluid" src="image/Others-Product-slide-7.png" alt="">
+                            </div>
+                            <div class="col-12 rounded bg-light pt-2">
+                                <p class="text font-weight-bold text-center">Greenie Monstera(2784)</p>
+                                <p class="text-center">Variegata Monstera</p>     
+                                <h3 class="text-secondary text-center py-2">$127</h3>
+                                <div class="d-flex justify-content-center">
+                                <a href="#"><i class="px-2 fa fa-facebook"></i></a>
+                                <a href="#"><i class="px-2 fa fa-instagram"></i></a>
+                                <a href="#"><i class="px-2 fa fa-phone"></i></a> </div>   
+                            </div>
+                        </div>
+                         </div>
+                        </div>
+                        </div>
+            
+            <div class="col-lg-6 col-12 pl-5 d-lg-flex justify-content-lg-between justify-content-center next4">
+                <div class="row pt-5">
+                    <div class="col-6 pt-5">
+                        <h5>Lorem ipsum dolor sit.</h5>
+                        <h1 class="py-2">New Arrival</h1>
+                        <h4 class="text-warning pb-4">Discount 50%</h4>
+                        <button class="bg-warning click  ml-3">Read More</button>
+
+                    </div>
+                    <div class="col-6">
+                        <img class="img-fluid" src="image/Others-Product-slide-7.png" alt="koza">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row py-3">
+        <div class="col-12 pt-5 d-block align-items-center">
+            <i class="fa fa-instagram fa-3x text-danger d-flex justify-content-center"></i>
+            <p class="text2 font-weight-bold text-center">Plantsy Instagram</p>
+            <h6 class="text-center"><a href="#">@plantsy.sample</a></h6>
+            <span class="bottom1 mb-5 mt-3"></span>
+        </div>
+        <div class="col-md-3 col-12">
+            <a href="#"><img class="img-fluid rounded" src="image/gALLERY-1-1.jpg" alt=""></a>
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="row ">
+                <div class="col-12 pb-2">
+                    <a href="#"><img class="img-fluid rounded" src="image/gALLERY-2-1.jpg" alt=""></a>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <a href="#"><img class="img-fluid rounded" src="image/gALLERY-4-1.jpg" alt=""></a>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <a href="#"><img class="img-fluid rounded" src="image/gALLERY-5-1.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-12">
+            <a href="#"><img class="img-fluid rounded" src="image/gALLERY-3-1-ox4we7513k7qaytrwtwxsex7a27cmqraad5fmvw9to.jpg" alt=""></a>
+        </div>
+<!-- xasx -->
+    </div>
+    <div class="row pt-3 pb-5">
+        <div class="col-md-8 col-12">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="#"><img class="img-fluid rounded" src="image/gALLERY-6-1.jpg" alt=""></a>
+                </div>
+                <div class="col-md-6 col-12">
+                    <a href="#"><img  class="img-fluid rounded" src="image/gALLERY-7-1.jpg" alt=""></a>
+                </div>
+                <div class="col-md-6 col-12">
+                    <a href="#"><img  class="img-fluid rounded" src="image/gALLERY-3-1.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <a href="#"><img class="img-fluid rounded" src="image/gALLERY-9-1.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+        <div class="container-fluid bg-light">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-md-4 col-12 d-md-block justify-content-md-start align-items-md-center">
+                        <p class="text2 font-weight-bold text-md-left text-center">Need Some Helps </p>
+                        <h5 class="text-secondary text-md-left text-center">Lorem ipsum dolor sit amet consectetur.</h5>
+                        <span class="bottom1 mx-md-0  my-3 "></span>
+                       <div class="col-12 pl-md-0 d-md-flex justify-content-md-start d-flex justify-content-center mb-5"> <button class="click px-3 rounded">Services</button></div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="col-12 mb-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="win5">
+                                        <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="text">Plant Maintenance</h4>
+                                    <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="win5">
+                                        <i class="fa fa-paper-plane-o fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="text">Plant Maintenance</h4>
+                                    <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="col-12 mb-5">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="win5">
+                                        <i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="text">Plant Maintenance</h4>
+                                    <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="win5">
+                                        <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-8">
+                                    <h4 class="text">Plant Maintenance</h4>
+                                    <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ </div>
+ <div class="container p-5">
+     <div class="row ">
+         <div class="col-12">
+             <p class="text2 font-weight-bold text-center mb-1">Learn Together</p>
+             <h5 class="text-secondary text-center">Watch, Read, And Learn The Blog</h5>
+             <span class="bottom1 my-4"></span>
+         </div>
+         
+         <div class="col-12 py-5 ">               
+            <div class="row d-flex ">
+                <div class="carousel-shows owl-carousel">
+                    <div class="col-lg-11 col-sm-10 border-left border-right shadow-sm rounded p-2">
+                    <div class="col-12">
+                    <img class="img-fluid rounded" src="image/4.jpg" alt="4"></div>                   
+                    <h2 class="text text-center">Treating Desk Houseplants</h2>
+                    <hr class="py-3">
+                    <p class="text-secondary text-center">Octaber 12.2020 - No Comments</p>
+                    <div class="d-flex justify-content-center"><button class="click rounded  p-2">Read More</button></div>
+
+
+         </div>
+         <div class="col-lg-11 col-sm-10 border-left border-right shadow-sm rounded p-2">
+            <div class="col-12">
+                <img class="img-fluid rounded" src="image/1-2.jpg" alt="4"></div>                   
+                <h2 class="text text-center">Treating Desk Houseplants</h2>
+                <hr class="py-3">
+                <p class="text-secondary text-center">Octaber 12.2020 - No Comments</p>
+                <div class="d-flex justify-content-center"><button class="click rounded  p-2">Read More</button></div>
+
+
+         </div>
+
+         <div class="col-lg-11 col-sm-10 border-left border-right shadow-sm rounded p-2">
+            <div class="col-12">
+                <img class="img-fluid rounded" src="image/2-2.jpg" alt="4"></div>                   
+                <h2 class="text text-center">Treating Desk Houseplants</h2>
+                <hr class="py-3">
+                <p class="text-secondary text-center">Octaber 12.2020 - No Comments</p>
+                <div class="d-flex justify-content-center"><button class="click rounded  p-2">Read More</button></div>
+
+
+         </div>
+         <div class="col-lg-11 col-sm-10 border-left border-right shadow-sm rounded p-2">
+            <div class="col-12">
+                <img class="img-fluid rounded" src="image/3-4.jpg" alt="4"></div>                   
+                <h2 class="text text-center">Treating Desk Houseplants</h2>
+                <hr class="py-3">
+                <p class="text-secondary text-center">Octaber 12.2020 - No Comments</p>
+                <div class="d-flex justify-content-center"><button class="click rounded  p-2">Read More</button></div>
+
+
+         </div>
+    </div>
+    </div>
+    </div>
+
+</div>
+</div>
+
+    <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 py-4">
+                    <img class="img-fluid py-4" src="image/PLANTSY.png" alt="logo">
+                    <p class="d-lg-flex justify-content-lg-start d-flex justify-content-center">Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Natus voluptas explicabo
+                          repudiandae</p>
+                          <h3 class="d-lg-flex justify-content-lg-start d-flex justify-content-center">Social Media</h3>
+                          <div class="d-lg-flex justify-content-lg-start d-flex justify-content-center">
+                          <i class="fa fa-facebook pl-4 pr-2"></i>
+                          <i class="fa fa-instagram px-2"></i>
+                          <i class="fa fa-whatsapp px-2"></i></div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-12 py-4">
+                    <h4 class="text py-4">Contact</h4>
+                    <div class="d-flex">
+                        <i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+                        <p class="text-secondary">Utama Street, Somewhere. SW 53321, Indonesia</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-phone mr-3" aria-hidden="true"></i>
+                        <p>+00 1453 2222</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-whatsapp mr-3" aria-hidden="true"></i>
+                        <p>+00 1453 2222</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="fa fa-envelope-open mr-3" aria-hidden="true"></i>
+                        <p>services.plantsy@sample.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 py-4">
+                    <h4 class="text py-4">Links</h4>
+                    <div class="mb-3"><a class="text-secondary" href="#">HomePage</a></div>
+                    <div class="mb-3"><a class="text-secondary" href="#">About Us </a></div>
+                    <div class="mb-3"><a class="text-secondary" href="#">Services </a></div>
+                    <div class="mb-3"><a class="text-secondary" href="#">Product</a></div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 py-4">
+                    <h4 class="text py-4">Links</h4>
+                    <div class="mb-3"><a class="text-secondary" href="#">Blog</a></div>
+                    <div class="mb-3"><a class="text-secondary" href="#">Our Team </a></div>
+                    <div class="mb-3"><a class="text-secondary" href="#">Gallery </a></div>
+                    <div class="mb-3"><a class="text-secondary" href="#">Contact</a></div>
+                </div>
+
+                <div class="col-12">
+                    <p class="text-secondary text-center pt-5 pb-3">Copyright © 2020 Plantsy | Powered by Rometheme Studio 2020</p>
+                </div>
+            </div>
+        </div>
+</div>
+   <script src="main.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

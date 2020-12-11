@@ -1,0 +1,54 @@
+// ////1
+$('.carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverpause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+// ////2
+$('.carousel-slide').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverpause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+// ////3
+$('.carousel-shows').owlCarousel({
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverpause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
