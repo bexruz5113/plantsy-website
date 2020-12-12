@@ -51,4 +51,48 @@ $('.carousel-shows').owlCarousel({
             items:3
         }
     }
-})
+});
+var eladdInputCreat = document.querySelector('.addInputCreat');
+var eladdButtonClick = document.querySelector('.addButtonClick');
+var addrandomNumber=Math.floor(Math.random() * (100 - 1)) + 1;
+console.log(addrandomNumber); 
+eladdButtonClick.addEventListener('click',function(){
+   if( eladdInputCreat.value){
+        if(addrandomNumber>eladdInputCreat.value){
+            alert('kichik son kiritildi');
+        }
+        else if(addrandomNumber<eladdInputCreat.value){
+            alert('katta son kiritildi');
+        }
+        else{
+            alert('uraaaa topdiz');
+        }
+   }
+   else{
+       alert('iltimos son kiriting')
+   }
+});           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
