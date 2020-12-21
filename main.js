@@ -246,7 +246,7 @@ var Phone=[
  {
     company:'huawei',
     foto:'image/samsung.jpg',
-    model:'huawei',
+    model:'redmi',
     memory:'64GB',
     batary:5000,
     prace:'200 $',
@@ -303,13 +303,14 @@ var eladdBox = document.querySelector('.addBox');
     elclickBtn.addEventListener('click', function(){
         var eladdFrangment=document.createDocumentFragment();
         for(var i=0; i<Phone.length; i++){
-            var eladdImage=document.createElement('img');
-            eladdImage.src=Phone[i].foto;
-
-
+            
+            
             var eladdTitle=document.createElement('h2');
             eladdTitle.textContent=Phone[i].company;
             // 
+            var eladdImage=document.createElement('img');
+            eladdImage.src=Phone[i].foto;
+            //
             var eladdModel=document.createElement('p');
             eladdModel.textContent=Phone[i].model;
             // 
@@ -360,9 +361,37 @@ var eladdBox = document.querySelector('.addBox');
 //     console.log(i+'=>'+Phone.company+' '+i);
 // });
 
+var eladdPhoneInput = document.querySelector('.addPhoneInput');
+var eladdPhoneBtn = document.querySelector('.addPhoneBtn');
+var eladdPhoneList = document.querySelector('.addPhoneList');
+eladdPhoneBtn.addEventListener('click', function(){
+    if(!eladdPhoneInput.value){
+        alert('telefon nomini kiriting');
+        return;
+    }
+    var eladdNewRegex=new RegExp(eladdPhoneInput.value,'gi');
+    
+  var  res = Phone.filter(function(telefon){
+        return telefon.color.match(eladdNewRegex);
+        });
+// console.log(eladdPhoneList);
+    var eladdNewFragment=document.createDocumentFragment();
+    res.forEach(function(telefon){
 
+        var eladdNewLi=document.createElement('li');
 
+            var eladdPhoneTitle=document.createElement('h2');
+            eladdPhoneTitle.textContent=telefon.model;
 
+            var eladdNewPhoto=document.createElement('img');
+            eladdNewPhoto.src=telefon.foto;
 
+            eladdNewLi.appendChild(eladdPhoneTitle);
+            eladdNewLi.appendChild(eladdNewPhoto);
 
+        eladdNewFragment.appendChild(eladdNewLi);
+});
+    // eladdPhoneList.innerHTML=eladdNewFragment.join('<br>');
 
+        eladdPhoneList.appendChild(eladdNewFragment); 
+    });
