@@ -5,7 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Plantsy</title>
-        <link rel="shortcut icon" href="image/logotip1.jpg" type="image/jpg">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -13,20 +12,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="image/logotip1.jpg" type="image/jpg">
 </head>
 <body>
-    <div class="container-fluid bg-white">
-        <div class="container">
-            <div class="row p-3">
-                <div class="col-lg-4 py-2 col-8 d-flex justify-content-lg-start justify-content-center">
+
+    <button class="buttonSticky text3 rounded" type="button"><i class="fa fa-chevron-up text-white fa-2x p-1"></i></button>
+
+<nav class="siteNav">
+     <div class="container">
+        <div class="row p-2">
+            <div class="col-lg-4 py-2 col-8 d-flex justify-content-lg-start justify-content-center">
                     <a href="#"><img class="img-fluid" src="image/PLANTSY.png" alt="logotip"></a>
-                </div>
-                <div class="col-4 p-2 justify-content-center align-items-center d-flex d-lg-none">
-                    <a class="btn btn-white" data-toggle="collapse" href="#collapseExample" role="button"
+              </div>
+              <div class="col-4 p-2 justify-content-center align-items-center d-flex d-lg-none">
+                    <button class="addCreateButton" type="button"><a class="btn btn-white" data-toggle="collapse" href="#collapseExample" role="button"
                         aria-expanded="false" aria-controls="collapseExample">
-                        <i class="fa fa-bars fa-2x text-secondary"></i>
-                    </a>
-                    <div class="collapse" id="collapseExample">
+                        <i class="fa fa-bars fa-2x text-secondary menu"></i>
+                    </a></button>
+                    <div class="createBox col-12">
+                        <button class="addCloseButton p-1" type="button">X</button>
                         <div class="col-12 d-block ">
                             <ul class="nav d-flex justify-content-lg-around align-items-lg-center">
                                
@@ -88,16 +92,16 @@
 
                         </div>
                     </div>
-                </div>
+              </div>
                 <!-- ////// -->
-                <div class="col-lg-8 d-lg-flex  d-none">
+             <div class="col-lg-8 d-lg-flex  d-none">
                     <ul class="nav d-flex justify-content-lg-around align-items-lg-center">
                         <li class="nav-item">
-                            <a class="nav-link active text-secondary font-weight-bold" href="#"><small
+                            <a class="nav-link active text-white font-weight-bold" href="#"><small
                                     class="font-weight-bold">Home</small></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
                               About
                             </a>
                             <div class="dropdown-menu">
@@ -107,7 +111,7 @@
                             </div>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
                               Services
                             </a>
                             <div class="dropdown-menu">
@@ -117,7 +121,7 @@
                             </div>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
                               Product
                             </a>
                             <div class="dropdown-menu">
@@ -127,10 +131,10 @@
                             </div>
                           </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary font-weight-bold" href="#"><small class="font-weight-bold">Blog</small></a>
+                            <a class="nav-link text-white font-weight-bold" href="#"><small class="font-weight-bold">Blog</small></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-secondary font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
+                            <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbardrop" data-toggle="dropdown">
                               Pages
                             </a>
                             <div class="dropdown-menu">
@@ -140,16 +144,24 @@
                             </div>
                           </li>
                         <li class="nav-item">
-                            <a class="nav-link text-secondary font-weight-bold" href="#"><small
+                            <a class="nav-link text-white font-weight-bold" href="#"><small
                                     class="font-weight-bold">Contact</small></a>
                         </li>
+                      
+                            <select class="bodyColor rounded-pill"> 
+                                <option value="dark">dark</option>
+                                <option value="success">success</option>
+                              </select>
+
                     </ul>
 
-                </div>
-            </div>
+             </div>
         </div>
-    </div>
-    <div class="container-fluid next1">
+</div>
+</nav>
+
+
+    <div class="container-fluid">
         <div class="container">
             <div class="row p-5">
                 <div class="col-12 py-5">
@@ -322,7 +334,7 @@
     </div>
 </div>
 <!-- kehejvkdfjvkjdkvjbfkjbfvkjbfkvjfbvkjfbvkfbvkjdfbvkjfdbvkjfbvkjfdbkj -->
-    <div class="container-fluid bg-light">
+    <div class="container-fluid">
         <div class="container">
             <div class="row">
             <div class="col-12 pt-5">
@@ -455,7 +467,7 @@
         </div>
         </div>
     </div>
-    <div class="container-fluid next3">
+    <div class="container-fluid">
         <div class="container p-5">
             <div class="row p-5">
                 <div class="col-12">
@@ -471,7 +483,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid  bg-light">
+    <div class="container-fluid">
         <div class="container">
         <div class="row">
             <div class="col-12 py-5">
@@ -606,7 +618,7 @@
         </div>
     </div>
 </div>
-        <div class="container-fluid bg-light">
+        <div class="container-fluid">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-md-4 col-12 d-md-block justify-content-md-start align-items-md-center">
@@ -736,7 +748,7 @@
 </div>
 </div>
 
-    <div class="container-fluid bg-light">
+    <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12 py-4">
@@ -791,15 +803,12 @@
         </div>
 </div>
 
-<div class="container d-block py-5">
-   
+<div class="container py-5  d-none">
             <input class="addInputCreat" type="text">
             <button class="addButtonClick" type="button">Tekshirish</button>
 </div>
 
-
-
- <div class="container bg-light">
+ <div class="container bg-light d-none">
 <div class="row d-flex">
     <div class="col-md-6 col-12 d-block justify-content-center align-items-center">
                 <div class="m-5 d-flex">
@@ -827,8 +836,6 @@
                     </ul>
                     </div>
                 </div>
-
-
                 <!--  -->
 
                 <div class="col-12">
@@ -838,15 +845,68 @@
                     <ul class="addPhoneList">
                             
                     </ul>
-
-
-
-
                 </div>
+            </div>
+      
+<!-- modal -->
+<!-- <div class="container bg-light p-5">
+            <button class="modal-button" type="button">Launch modal</button>
+    
+    <section class="modal">
+        <div class="modal-dialog">
+            <button class="modal-close" type="button">X</button>
+            <h5 class="modal-heading">Modal title</h5>
+            <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, animi!</p>
+        </div>
+    </section> -->
+    
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
 
-               
-            </div>
-            </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!--         
+<div class="container p-5 bg-light">
+<button class="createButton py-2 px-4 bg-success" type="button">click</button>
+<button class="closeButton py-2 px-4 bg-danger" type="button">close</button>
+<select>
+    
+</select>
+<div class="box mt-3">
+    <p class="font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, eius.</p>
+</div>
+</div> -->
+
+
+
 
 
 
