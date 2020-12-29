@@ -1,5 +1,21 @@
 // ////1
- 
+$('.carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverpause: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+})
 // ////2
 $('.carousel-slide').owlCarousel({
     loop: true,
@@ -467,7 +483,7 @@ document.addEventListener('scroll',function(){
                 document.body.style.marginTop='0';
             }
 })
-// 
+// sticky tugmacha // // // // // //
  var elButtonSticky = document.querySelector('.buttonSticky');
 
  document.addEventListener('scroll',function(){
@@ -476,23 +492,15 @@ document.addEventListener('scroll',function(){
         
  var elstickyShow = document.querySelector('.sticky-show');
  elstickyShow.addEventListener('click',function(){
-    //  console.log('alommm');
      document.documentElement.scrollTop = 0;
     //  document.body.scrollTop = 0;
- 
  })
-
     }
     else{
         elButtonSticky.classList.remove('sticky-show');
     }
  })
- 
 
-
-//  elButtonSticky.addEventListener('click',function(){
-//      document
-//  })
 
 
 
