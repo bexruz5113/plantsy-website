@@ -52,6 +52,56 @@ $('.carousel-shows').owlCarousel({
         }
     }
 });
+// NAVABR
+
+var elBodyColor=document.querySelector('.bodyColor');
+
+elBodyColor.addEventListener('click',function(){
+    if(elBodyColor.value==='dark'){
+        document.body.classList.remove('theme-success');
+        document.body.classList.add('theme-dark');
+    }
+
+    else if(elBodyColor.value==='success'){
+        document.body.classList.remove('theme-dark');
+        document.body.classList.add('theme-success');
+    }
+});
+// navbar
+
+
+var elSiteNav = document.querySelector('.siteNav');
+
+document.addEventListener('scroll',function(){
+            if(window.scrollY>500){
+                elSiteNav.classList.add('siteNav-fixed');
+                document.body.style.marginTop=elSiteNav.scrollHeight+ 'px';
+            }
+            else{
+                elSiteNav.classList.remove('siteNav-fixed');
+                document.body.style.marginTop='0';
+            }
+})
+// sticky tugmacha // // // // // //
+ var elButtonSticky = document.querySelector('.buttonSticky');
+
+ document.addEventListener('scroll',function(){
+    if(window.scrollY>500){
+        elButtonSticky.classList.add('sticky-show');
+        
+ var elstickyShow = document.querySelector('.sticky-show');
+ elstickyShow.addEventListener('click',function(){
+     document.documentElement.scrollTop = 0;
+    //  document.body.scrollTop = 0;
+ })
+    }
+    else{
+        elButtonSticky.classList.remove('sticky-show');
+    }
+ })
+
+
+
 // regexP
 // var words=prompt('Matn kiriting.');
 // var regex = new RegExp('[.!?] ', 'gi');
@@ -157,9 +207,6 @@ $('.carousel-shows').owlCarousel({
 //         scanner++;
 //     }
 // }
-
-
-
 
 // for (var i = 0; i < 500; i++) {
 //     if (i % 5 === 0) {
@@ -454,52 +501,6 @@ var Phone = [
 // elSelect.appendChild(elSelectFragment);
 
 ///////
-
-var elBodyColor=document.querySelector('.bodyColor');
-
-elBodyColor.addEventListener('click',function(){
-    if(elBodyColor.value==='dark'){
-        document.body.classList.remove('theme-success');
-        document.body.classList.add('theme-dark');
-    }
-
-    else if(elBodyColor.value==='success'){
-        document.body.classList.remove('theme-dark');
-        document.body.classList.add('theme-success');
-    }
-});
-// navbar
-
-
-var elSiteNav = document.querySelector('.siteNav');
-
-document.addEventListener('scroll',function(){
-            if(window.scrollY>500){
-                elSiteNav.classList.add('siteNav-fixed');
-                document.body.style.marginTop=elSiteNav.scrollHeight+ 'px';
-            }
-            else{
-                elSiteNav.classList.remove('siteNav-fixed');
-                document.body.style.marginTop='0';
-            }
-})
-// sticky tugmacha // // // // // //
- var elButtonSticky = document.querySelector('.buttonSticky');
-
- document.addEventListener('scroll',function(){
-    if(window.scrollY>500){
-        elButtonSticky.classList.add('sticky-show');
-        
- var elstickyShow = document.querySelector('.sticky-show');
- elstickyShow.addEventListener('click',function(){
-     document.documentElement.scrollTop = 0;
-    //  document.body.scrollTop = 0;
- })
-    }
-    else{
-        elButtonSticky.classList.remove('sticky-show');
-    }
- })
 
 
 
