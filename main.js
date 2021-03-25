@@ -2,7 +2,7 @@
 $('.carousel').owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverpause: true,
     responsive: {
         0: {
@@ -20,7 +20,7 @@ $('.carousel').owlCarousel({
 $('.carousel-slide').owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverpause: true,
     responsive: {
         0: {
@@ -38,7 +38,7 @@ $('.carousel-slide').owlCarousel({
 $('.carousel-shows').owlCarousel({
     loop: true,
     autoplay: true,
-    autoplayTimeout: 2000,
+    autoplayTimeout: 2500,
     autoplayHoverpause: true,
     responsive: {
         0: {
@@ -52,93 +52,80 @@ $('.carousel-shows').owlCarousel({
         }
     }
 });
-// NAVABR
+// NAVABR webside full color
 
-var elBodyColor=document.querySelector('.bodyColor');
+var elBodyColor = document.querySelector('.bodyColor');
 
-elBodyColor.addEventListener('click',function(){
-    if(elBodyColor.value==='dark'){
+elBodyColor.addEventListener('click', function () {
+    if (elBodyColor.value === 'dark') {
         document.body.classList.remove('theme-success');
         document.body.classList.add('theme-dark');
     }
 
-    else if(elBodyColor.value==='success'){
+    else if (elBodyColor.value === 'success') {
         document.body.classList.remove('theme-dark');
         document.body.classList.add('theme-success');
     }
 });
+
 // navbar
-
-
 var elSiteNav = document.querySelector('.siteNav');
 
-document.addEventListener('scroll',function(){
-            if(window.scrollY>500){
-                elSiteNav.classList.add('siteNav-fixed');
-                document.body.style.marginTop=elSiteNav.scrollHeight+ 'px';
-            }
-            else{
-                elSiteNav.classList.remove('siteNav-fixed');
-                document.body.style.marginTop='0';
-            }
+document.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+        elSiteNav.classList.add('siteNav-fixed');
+        document.body.style.marginTop = elSiteNav.scrollHeight + 'px';
+    }
+    else {
+        elSiteNav.classList.remove('siteNav-fixed');
+        document.body.style.marginTop = '0';
+    }
 })
 // sticky tugmacha // // // // // //
- var elButtonSticky = document.querySelector('.buttonSticky');
+var elButtonSticky = document.querySelector('.buttonSticky');
 
- document.addEventListener('scroll',function(){
-    if(window.scrollY>500){
+document.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
         elButtonSticky.classList.add('sticky-show');
-        
- var elstickyShow = document.querySelector('.sticky-show');
- elstickyShow.addEventListener('click',function(){
-     document.documentElement.scrollTop = 0;
-    //  document.body.scrollTop = 0;
- })
+
+        var elstickyShow = document.querySelector('.sticky-show');
+        elstickyShow.addEventListener('click', function () {
+            // elButtonSticky.addEventListener('click',function(){
+            document.documentElement.scrollTop = 0;
+            //  document.body.scrollTop = 0;
+        })
     }
-    else{
+    else {
         elButtonSticky.classList.remove('sticky-show');
     }
- })
-
-
+})
+// random
+var eladdInputCreat = document.querySelector('.addInputCreat');
+var eladdButtonClick = document.querySelector('.addButtonClick');
+var addrandomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
+console.log(addrandomNumber);
+eladdButtonClick.addEventListener('click', function () {
+    eladdInputCreat.value="";
+    if (eladdInputCreat.value) {
+        if (addrandomNumber > eladdInputCreat.value) {
+            alert('kichik son kiritildi');
+        }
+        else if (addrandomNumber < eladdInputCreat.value) {
+            alert('katta son kiritildi');
+        }
+        else {
+            alert('uraaaa topdiz');
+        }
+    }
+    else {
+        alert('iltimos son kiriting')
+    }
+});
 
 // regexP
 // var words=prompt('Matn kiriting.');
 // var regex = new RegExp('[.!?] ', 'gi');
 // console.log( words.split(regex));
-
-// xatooo
-// var elBtnWhite = document.querySelector('.btn btn-white');
-// var elCollapse = document.querySelector('.collapse');
-// elBtnWhite.addEventListener('click', function(){
-//     document.body.classList.toggle('collapse');
-// })
-
-
-// random
-// var eladdInputCreat = document.querySelector('.addInputCreat');
-// var eladdButtonClick = document.querySelector('.addButtonClick');
-// var addrandomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
-// console.log(addrandomNumber);
-// eladdButtonClick.addEventListener('click', function () {
-//     if (eladdInputCreat.value) {
-//         if (addrandomNumber > eladdInputCreat.value) {
-//             alert('kichik son kiritildi');
-//         }
-//         else if (addrandomNumber < eladdInputCreat.value) {
-//             alert('katta son kiritildi');
-//         }
-//         else {
-//             alert('uraaaa topdiz');
-//         }
-//     }
-//     else {
-//         alert('iltimos son kiriting')
-//     }
-// });
-
-
-
 
 
 // var eldoubleInput = document.querySelector('.doubleInput');
@@ -233,7 +220,7 @@ document.addEventListener('scroll',function(){
 
 
 // for(var i=0;i<Phone.length;i++){
- //     alert(Phone[i].batary);
+//     alert(Phone[i].batary);
 // }
 
 
@@ -271,6 +258,17 @@ document.addEventListener('scroll',function(){
 
 
 
+//// LocalStorage ///////
+//  oti = prompt('otingni ayt:');
+//  localStorage.setItem('foydalanuvchi',oti);
+
+
+
+
+
+
+// console.log(oti);
+
 
 
 
@@ -278,43 +276,43 @@ document.addEventListener('scroll',function(){
 var Phone = [
     {
         company: 'Artel',
+        batary: 1000000,
         foto: 'image/xiomi.jpg',
         model: 'artel',
         memory: '64GB',
-        batary: 5000,
-        prace: '200 $',
+        prace: 900,
         color: 'blue',
         camera: '64 MP',
         operative: 4
     },
     {
         company: 'huawei',
+        batary: 77700,
         foto: 'image/samsung.jpg',
         model: 'redmi',
         memory: '64GB',
-        batary: 5000,
-        prace: '200 $',
-        color: 'blue',
-        camera: '64 MP',
-        operative: 4
-    },
-    {
-        company: 'readmi',
-        foto: 'image/iphone.jpg',
-        model: 'readmi',
-        memory: '64GB',
-        batary: 5000,
         prace: 200,
         color: 'blue',
         camera: '64 MP',
         operative: 4
     },
     {
+        company: 'readmi',
+        batary: 5000,
+        foto: 'image/iphone.jpg',
+        model: 'readmi',
+        memory: '64GB',
+        prace: 100,
+        color: 'blue',
+        camera: '64 MP',
+        operative: 4
+    },
+    {
         company: 'Xiomi',
+        batary: 1212000,
         foto: 'image/xiomi.jpg',
         model: 'redmi',
         memory: '64GB',
-        batary: 5000,
         prace: 200,
         color: 'blue',
         camera: '64 MP',
@@ -322,10 +320,10 @@ var Phone = [
     },
     {
         company: 'Iphone',
+        batary: 4000,
         foto: 'image/iphone.jpg',
         model: 'Iphone X',
         memory: '128 GB',
-        batary: 4000,
         prace: 1000,
         color: 'dark',
         camera: '48 MP',
@@ -333,28 +331,30 @@ var Phone = [
     },
     {
         company: 'Samsung',
+        batary: 100000,
         foto: 'image/samsung.jpg',
         model: 'A51',
         memory: '32 GB',
-        batary: 5000,
         prace: 300,
         color: 'black',
         camera: '32 MP',
         operative: 4
     }];
 
-// var elclickBtn = document.querySelector('.clickBtn');
-// var eladdBox = document.querySelector('.addBox');
-// elclickBtn.addEventListener('click', function () {
-//     var eladdFrangment = document.createDocumentFragment();
-//     for (var i = 0; i < Phone.length; i++) {
+// fragment
+
+// var elclickBtn = document.querySelector('.clickBtn2');
+// var eladdBox = document.querySelector('.addBox2');
+
+// elclickBtn.addEventListener('click', function() {
+//     eladdBox.textContent='';
+
+//     var eladdFrangment1 = document.createDocumentFragment();
+//         for (var i = 0; i < Phone.length; i++) {
 
 //         var eladdTitle = document.createElement('h2');
 //         eladdTitle.textContent = Phone[i].company;
 //         // 
-//         var eladdImage = document.createElement('img');
-//         eladdImage.src = Phone[i].foto;
-//         //
 //         var eladdModel = document.createElement('p');
 //         eladdModel.textContent = Phone[i].model;
 //         // 
@@ -363,22 +363,20 @@ var Phone = [
 //         eladdLink.textContent = 'zakaz berish';
 //         // 
 //         var eladdLi = document.createElement('li');
-//         eladdLi.classList.add('col-4', 'bg-light', 'm-3', 'rounded', 'border', 'd-block', 'text-center', 'w-25');
+//         eladdLi.classList.add('col-12', 'bg-light', 'm-3', 'rounded', 'border', 'd-block', 'text-center', 'w-25');
 //         // 
 //         eladdLi.appendChild(eladdTitle);
-//         eladdLi.appendChild(eladdImage);
+//         // eladdLi.appendChild(eladdImage);
 //         eladdLi.appendChild(eladdModel);
 //         eladdLi.appendChild(eladdLink);
-//         //
-//         eladdFrangment.appendChild(eladdLi);
-
-//         // fragmentsiz <<\/>>
-//         // eladdBox.appendChild(eladdLi);
+//         eladdFrangment1.appendChild(eladdLi);
 //     };
-//     eladdBox.appendChild(eladdFrangment);
+//     eladdBox.appendChild(eladdFrangment1);
 // })
 
 
+// fragmentsiz <<\/>>
+// eladdBox.appendChild(eladdLi);
 // ///////  function  ///////
 // //  var Name=function(ism){
 // //      console.log('assalomu alekum'+ism);
@@ -405,42 +403,98 @@ var Phone = [
 // //     console.log(i+'=>'+Phone.company+' '+i);
 // // });
 
-// var eladdPhoneInput = document.querySelector('.addPhoneInput');
-// var eladdPhoneBtn = document.querySelector('.addPhoneBtn');
-// var eladdPhoneList = document.querySelector('.addPhoneList');
-// eladdPhoneBtn.addEventListener('click', function () {
-//     if (!eladdPhoneInput.value) {
-//         alert('telefon nomini kiriting');
+
+////////  RegExp   ///////
+
+var elnewName = document.querySelector('.newName');
+var elNewButton = document.querySelector('.NewButton');
+var elCreateResult = document.querySelector('.CreateResult');
+
+elNewButton.addEventListener('click', function () {
+    if (!elnewName.value) {
+        alert('telefon rangini kiriting');
+        return;
+    }
+
+
+    var eladdNewRegExp = new RegExp(elnewName.value, 'gi');
+
+    var result = Phone.filter(function (nomi) {
+        return nomi.company.match(eladdNewRegExp);
+    });
+    elCreateResult.textContent = '';
+
+    var eladdNewFragment = document.createDocumentFragment();
+    result.forEach(function (nomi) {
+
+        var elAddNewList = document.createElement('div');
+        elAddNewList.classList.add('border', 'bg-dark', 'm-3', 'col-6', 'text-center', 'text-white');
+
+        var eladdPhoneTitle1 = document.createElement('h2');
+        eladdPhoneTitle1.textContent = nomi.model;
+
+        var eladdNewPhoto1 = document.createElement('p');
+        eladdNewPhoto1.textContent = nomi.operative;
+
+        elAddNewList.appendChild(eladdPhoneTitle1);
+        elAddNewList.appendChild(eladdNewPhoto1);
+
+        // console.log(elAddNewList);
+        eladdNewFragment.appendChild(elAddNewList);
+    });
+    // eladdPhoneList.innerHTML=eladdNewFragment.join ('<br>');
+    elCreateResult.appendChild(eladdNewFragment);
+
+});
+
+// 
+// // 
+
+// var elnewNameTemp = document.querySelector('.newNameTemp');
+// var elNewButtonTemp = document.querySelector('.NewButtonTemp');
+// var elCreateResultTemp =document.querySelector('.CreateResultTemp');
+// var elNewTemplate = document.querySelector('#Phone-template').content;
+
+// elNewButtonTemp.addEventListener('click', function(){
+//     if(!elnewNameTemp){
+//         alert('nom kiriting');
 //         return;
 //     }
-//     var eladdNewRegex = new RegExp(eladdPhoneInput.value, 'gi');
+//     var elNewRegexpTemp = new RegExp(elnewNameTemp.value ,'gi');
 
-//     var res = Phone.filter(function (telefon) {
-//         return telefon.color.match(eladdNewRegex);
-//     });
-//     // console.log(eladdPhoneList);
-//     var eladdNewFragment = document.createDocumentFragment();
-//     res.forEach(function (telefon) {
+//    var  natija=Phone.filter(function(temp){
+//         return temp.company.match(elNewRegexpTemp);
+//     })
+//     // elCreateResultTemp.textContent='';
+//         var elNewTempFragment = document.createDocumentFragment();
+//          natija.forEach(function(temp){
 
-//         var eladdNewLi = document.createElement('li');
+//         var elNewTempClone = document.importNode(elNewTemplate, true);
+//         elNewTempClone.querySelector('.sampler--name').textContent=temp.company; 
+//         elNewTempClone.querySelector('.sampler--model').textContent=temp.model;
+//         elNewTempClone.querySelector('.sampler--link').href='#'; 
 
-//         var eladdPhoneTitle = document.createElement('h2');
-//         eladdPhoneTitle.textContent = telefon.model;
-
-//         var eladdNewPhoto = document.createElement('img');
-//         eladdNewPhoto.src = telefon.foto;
-
-//         eladdNewLi.appendChild(eladdPhoneTitle);
-//         eladdNewLi.appendChild(eladdNewPhoto);
-
-//         eladdNewFragment.appendChild(eladdNewLi);
-//     });
-//     // eladdPhoneList.innerHTML=eladdNewFragment.join('<br>');
-
-//     eladdPhoneList.appendChild(eladdNewFragment);
-// });
+//         // console.log(elNewTempClone);
+//         elNewTempFragment.appendChild('elNewTempClone');
 
 
+
+//         // var elTempContainer = document.createElement('div');
+//         // elTempContainer.classList.add('container','bg-primary','m-auto');
+
+//         // var elTempCamera = document.createElement('h2');
+//         // elTempCamera.textContent = telephone.camera;
+
+
+//         // elTempContainer.appendChild(elTempCamera);
+
+
+//         // elNewTempFragment.appendChild(elTempContainer);
+
+//     })
+//         elCreateResultTemp.appendChild(elNewTempFragment);
+
+// })
 
 
 // var elCreateButton = document.querySelector('.createButton');
@@ -493,7 +547,7 @@ var Phone = [
 
 //         var elOption =document.createElement('option');
 //         elOption.textContent=add.company;
-        
+
 //         elSelectFragment.appendChild(elOption);
 //     // }
 
@@ -503,39 +557,146 @@ var Phone = [
 ///////
 
 
+// var nomi1 = function(){
+//     var ism = 'bexruz';
+//     console.log(ism);
+// }();
+
+// nomi1();
+
+// (function (){
+//     var nomi="Feruz";
+//     console.log(nomi);
+// })();
+
+// // //  SORT // // // // //
+
+// var yangi = pokemonlar.sort(function (a, b) {
+//     if (a.name > b.name) {
+//         return 1;
+//     }
+//     if (a.name < b.name) {
+//         return -1;
+//     }
+//     else {
+//         return 0;
+//     }
+
+// })
+// console.log(yangi);
+// //////
+
+// var sarala = function () {
+
+//     var work = pokemonlar.map(function (item) {
+//         return {
+//             id: item.id,
+//             nomi: item.name
+//         }
+//     }).sort(function (x, y) {
+//         if (x.nomi > y.nomi) {
+//             return 1;
+//         }
+//         if (x.nomi < y.nomi) {
+//             return -1;
+//         }
+//         else {
+//             return 0;
+//         }
+//     });
+//     console.log(work);
+// };
+// sarala();
+
+// // // // 
+// (function(){
+//     var work = Phone.map(function(tel,index){
+//         return{
+//             id : index,
+//             nomi : tel.company}  
+//     })
+//     console.log(work);
+// })();
+
+// var elQuti = document.querySelector('.quti'); 
 
 
 
+// (function(){
+// var elTekshiruvchi = document.querySelector('.tekshiruvchi');
+// elTekshiruvchi.addEventListener('click',function(){
+// console.log('ok');
+// });
+// })();
 
 
+// /////
+/////// Tasbex  ////
+
+var elSana = document.querySelector('.sana');
+var elQow = document.querySelector('.qow');
+var elRestart = document.querySelector('.restart');
+ 
+elQow.addEventListener('click',function(){
+    elSana.value=parseInt(elSana.value)+1;
+    // elSana.value++;
+})
+
+elRestart.addEventListener('click',function(){
+    elSana.value=0;
+})
+
+// ///// calculator //// 
+var elekran = document.querySelector('.ekran');
+var eltd = document.querySelectorAll('td');
+eltd.forEach(function(item){
+    item.addEventListener('click',function(evt){
+        if(evt.target.innerHTML == "C"){elekran.value =" ";}
+       else if(evt.target.innerHTML =="="){elekran.value=eval(elekran.value);}
+        else{elekran.value += evt.target.innerHTML;}});  });
+
+// igra  //// 
+var eldragon = document.querySelector('.dragon');
+var elcactus = document.querySelector('.cactus');
+
+window.addEventListener('click', function (){
+    eldragon.classList.add('animation');    
+    setTimeout(function(){
+        eldragon.classList.remove('animation'); 
+    },900)
+})
+// .........
+// var checkdead = setInterval(function(){
+//   var eldragonTop = parseInt(window.getComputedStyle(eldragon).getPropertyValue('top'));
+//   var elcactusLeft = parseInt(window.getComputedStyle(elcactus).getPropertyValue('left'));
+//   if(elcactusLeft < 50 && elcactusLeft > 0 || eldragonTop>=60){
+//       alert('tugadi');
+//   }
+// },20)
+// .........
 
 
+// (function(){
+//     var elonclick = document.querySelector('.onclick');
+
+//     var showSite = function(ishladi){
+//         console.log(ishladi);
+//     }
+
+//     var OnError = function(Error){
+//         alert('tugadi!');
+//     }
 
 
+//     elonclick.addEventListener('click',function(){
+//         window.load('https://api.npoint.io/e8e1e96c8d6b98a62e11', showSite, OnError)
+//     });
+// })();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var sorov = new XMLHttpRequest();
+// sorov.open('get','pokemon.json');
+// sorov.send();
+// sorov.onload = function(){
+// var korish=JSON.parse(sorov.responseText);
+// console.log(korish);
+// }
