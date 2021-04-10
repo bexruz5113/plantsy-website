@@ -7,6 +7,49 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+.bg-image{
+    background-image: url('./image/homeimage.jpg');
+    background-size: cover;
+    /* background-position: center center; */
+}
 .next1{
     width: 100%;
     object-fit: cover;
@@ -21,6 +64,11 @@ html{
     background-size: cover;
     background-image: url(image/iklannn.png);  
 }
+.fullColor{
+    background-color: #275F5E;
+    color: #fff;
+
+}
 .next4{
     background-color: #275F5E;
     border-radius: 10px;
@@ -30,7 +78,17 @@ html{
     height: 600px;
     background-image: url(https://resumegenius.com/wp-content/themes/genesis-rg-v3/images/home-faq-bg.svg);
 } */
+.customerImage{
+background-image: url('image/custom.png');
+background-size: cover;
+background-position: center center;
 
+}
+.menuButton{
+    font-size: 40px;
+    text-align: right;
+    color: white;
+}
 .text{
     color:#275F5E;
 }
@@ -63,17 +121,10 @@ html{
 .click{
 
     background-color: #275F5E;
-    transition: all 1s ease;
     color: floralwhite;
+    border: none;
 }
-.click:hover{
-    transform: translateY(15px);
-    /* transform:translateY(10px); */
-}
-/* .img1{
-    padding-bottom:100px;
-    z-index: 3;
-} */
+
 .win1{
     width: 260px;
     padding: 10px;
@@ -199,12 +250,6 @@ html{
 .theme-success{
     color:white;
     background-color: rgb(8, 37, 13);
-}
-
-
-.siteNav{
-    color:white;
-    background-color:rgb(30, 32, 29);
 }
 .siteNav-fixed{
     position:fixed;
@@ -391,8 +436,30 @@ td:hover{
     0%{ right: 0;}
     100%{ right:110%;}
 }
+.my-name{
+    width: 150px;
+    font-size: 50px;
+    animation: slide 5s linear infinite;
+}
+@keyframes slide {
+    0%{
+        transform: rotateY(0deg);
+        color: gold}
+        25%{
+            transform: rotateY(90deg);
+            color: goldenrod;}
+            50%{
+                transform: rotateY(180deg);
+                color: rgb(224, 255, 47);}
+                75%{
+                    transform: rotateY(270deg);
+                    color: #cbdc35;}
+                     to{
+                         transform: rotateY(360deg);
+                             color: yellow;
 
-
+    }    
+}
 
 
 

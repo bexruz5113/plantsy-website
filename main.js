@@ -105,7 +105,7 @@ var eladdButtonClick = document.querySelector('.addButtonClick');
 var addrandomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
 console.log(addrandomNumber);
 eladdButtonClick.addEventListener('click', function () {
-    eladdInputCreat.value="";
+    eladdInputCreat.value=""; 
     if (eladdInputCreat.value) {
         if (addrandomNumber > eladdInputCreat.value) {
             alert('kichik son kiritildi');
@@ -121,7 +121,13 @@ eladdButtonClick.addEventListener('click', function () {
         alert('iltimos son kiriting')
     }
 });
-
+function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 // regexP
 // var words=prompt('Matn kiriting.');
 // var regex = new RegExp('[.!?] ', 'gi');
