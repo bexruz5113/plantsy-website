@@ -46,9 +46,10 @@ html{
     .sidenav a {font-size: 18px;}
   }
 .bg-image{
+    padding:30px 0;
     background-image: url('./image/homeimage.jpg');
     background-size: cover;
-    /* background-position: center center; */
+    background-position: center center;
 }
 .next1{
     width: 100%;
@@ -96,10 +97,18 @@ background-position: center center;
     background-color:#275F5E;
 }
 .text1{
+    width: 60%;
     font-size: 60px;
     text-align: start;
     color:#275F5E;
 }
+@media screen and (max-height: 600px) {
+.text1{
+    width: 100%;
+    font-size: 35px;
+}
+}
+
 .text2{
     font-size: 40px;
     text-align: start;
@@ -177,6 +186,7 @@ background-position: center center;
 }
 .win4{
     width: 150px;
+    margin: 0 auto;
     height: 150px;
     border: 1px solid black;
     border-radius: 50%;
