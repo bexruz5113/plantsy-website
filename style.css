@@ -184,6 +184,15 @@ background-position: center center;
     color: teal;
 
 }
+.imageHover{
+    -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+.imageHover:hover{
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+}
 .win4{
     width: 150px;
     margin: 0 auto;
